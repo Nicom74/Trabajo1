@@ -74,6 +74,7 @@ fun ApnavClaseApp() {
                 AppDestinations.HOME -> HomeScreen(modifier = Modifier.padding(innerPadding))
                 AppDestinations.FAVORITES -> FavoritesScreen(modifier = Modifier.padding(innerPadding))
                 AppDestinations.PROFILE -> ProfileScreen(modifier = Modifier.padding(innerPadding))
+                AppDestinations.CONTACTOS -> ContactosScreen(modifier = Modifier.padding(innerPadding))
             }
         }
     }
@@ -86,6 +87,7 @@ enum class AppDestinations(
     HOME("Home", R.drawable.ic_home),
     FAVORITES("Favorites", R.drawable.ic_favorite),
     PROFILE("Profile", R.drawable.ic_account_box),
+    CONTACTOS("Contactos", R.drawable.ic_contactos),
 }
 
 @Composable

@@ -9,4 +9,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Flash" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_start_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empezar grabacion">
+        </Button>
+        <Button
+            android:id="@+id/btn_end_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminar grabacion">
+        </Button>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/camera_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_selfie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo selfie">
+        </Button>
+        <Button
+            android:id="@+id/btn_frontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camara frontal">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_start_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empezar video">
+        </Button>
+        <Button
+            android:id="@+id/btn_end_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminar video">
+        </Button>
+    </LinearLayout>
 </LinearLayout>

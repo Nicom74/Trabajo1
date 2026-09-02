@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "247983215115",
+    "project_id": "trabajo1-a3312",
+    "storage_bucket": "trabajo1-a3312.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247983215115:android:ca3f9a344b964c0a0ced0e",
+        "android_client_info": {
+          "package_name": "com.example.trabajo1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpQx4hgxPqR2bHiZ4JQ4EH3s3KoBnUHZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
