@@ -9,7 +9,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.example.trabajo1"
+        applicationId = "com.martel.trabajo1"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -36,7 +36,10 @@ android {
 
 val cameraxVersion = "1.4.2"
 dependencies {
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     implementation(platform("com.google.firebase:firebase-bom:34.18.0"))
+    implementation(libs.androidx.material3)
+    implementation("org.osmdroid:osmdroid-android:6.1.20")
     implementation("com.google.firebase:firebase-firestore")
     implementation("androidx.camera:camera-core:${cameraxVersion}")
     implementation("androidx.camera:camera-camera2:${cameraxVersion}")
@@ -44,6 +47,7 @@ dependencies {
     implementation("androidx.camera:camera-video:${cameraxVersion}")
     implementation("androidx.camera:camera-view:${cameraxVersion}")
     implementation("androidx.camera:camera-extensions:${cameraxVersion}")
+    implementation(libs.play.services.location)
     implementation(libs.play.services.maps)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)

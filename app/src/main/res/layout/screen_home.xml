@@ -1,72 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/btn_flash"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Flash" />
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:padding="16dp">
+
+        <!-- Vista previa de cámara -->
+        <FrameLayout
+            android:id="@+id/camera_preview_container"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Flash -->
         <Button
-            android:id="@+id/btn_start_audio"
+            android:id="@+id/btn_flash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flash"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Sección: Cámara -->
+        <TextView
+            android:text="CAMARA"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Empezar grabacion">
-        </Button>
-        <Button
-            android:id="@+id/btn_end_audio"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btn_selfie"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Modo selfie" />
+
+            <Button
+                android:id="@+id/btn_frontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cámara frontal" />
+        </LinearLayout>
+
+        <!-- Sección: Audio -->
+        <TextView
+            android:text="AUDIO"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Terminar grabacion">
-        </Button>
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btn_start_audio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Empezar grabación" />
+
+            <Button
+                android:id="@+id/btn_end_audio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Terminar grabación" />
+        </LinearLayout>
+
+        <!-- Sección: Video -->
+        <TextView
+            android:text="VIDEO"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_start_video"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Empezar video" />
+
+            <Button
+                android:id="@+id/btn_end_video"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Terminar video" />
+        </LinearLayout>
+
+        <!-- Batería -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar_bateria"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_bateria"
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Cantidad de batería" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="CATASTROFES RECIENTES"
+                android:textStyle="bold"
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp" />
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/compose_historial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="CONTACTOS"
+                android:textStyle="bold"
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp" />
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/compose_contactos"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+        </LinearLayout>
     </LinearLayout>
-    <FrameLayout
-        android:id="@+id/camera_preview_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <Button
-            android:id="@+id/btn_selfie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Modo selfie">
-        </Button>
-        <Button
-            android:id="@+id/btn_frontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Camara frontal">
-        </Button>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <Button
-            android:id="@+id/btn_start_video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Empezar video">
-        </Button>
-        <Button
-            android:id="@+id/btn_end_video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Terminar video">
-        </Button>
-    </LinearLayout>
-</LinearLayout>
+</ScrollView>

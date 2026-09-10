@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:id="@+id/address_container"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:textSize="24sp"
+                android:text="CATASTROFES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp"
+                android:text="¿QUE HACER CUANDO OCURREN?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/boatswashedashore">
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/texto_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En esta guía encontrarás información clara y práctica
+        sobre cómo actuar frente a distintas situaciones de emergencia. Nos
+        enfocaremos en tres catástrofes frecuentes en nuestra región: incendios,
+        inundaciones y tormentas severas, brindando recomendaciones para el antes,
+         durante y después de cada evento.
+         El objetivo es que estés preparado para actuar con rapidez y seguridad, minimizando riesgos para vos y para los demás.">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:textSize="20sp"
+                android:text="TORNADO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <VideoView
+                android:id="@+id/videoTornado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- ANTES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="ANTES"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Guardá objetos sueltos del patio (pueden salir volando)." />
+
+            <!-- DURANTE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DURANTE"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Quedate adentro, lejos de ventanas.\n• Desenchufá aparatos electrónicos.\n• Si estás afuera y no hay refugio, evitá árboles aislados y objetos metálicos." />
+
+            <!-- DESPUÉS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DESPUES"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Revisá el techo y desagües por daños del granizo." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:textSize="20sp"
+                android:text="TERREMOTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <VideoView
+                android:id="@+id/videoTerremoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- ANTES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="ANTES"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Tené matafuegos cargados y verificados. Conocé las salidas de emergencia de tu casa o edificio." />
+
+            <!-- DURANTE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DURANTE"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Agachate, cubrite y sujetate (bajo una mesa o mueble resistente).\n• Alejate de ventanas, espejos y objetos que puedan caer.\n• Si estás afuera, alejate de edificios, postes y cables." />
+
+            <!-- DESPUÉS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DESPUES"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Salí con cuidado revisando que no haya vidrios rotos ni estructuras dañadas. Estate atento a réplicas." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:textSize="20sp"
+                android:text="INCENDIO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <VideoView
+                android:id="@+id/videoIncendio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- ANTES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="ANTES"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• Tené matafuegos cargados y verificados. Conocé las salidas de emergencia de tu casa o edificio." />
+
+            <!-- DURANTE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DURANTE"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• No uses ascensores.\n• Agachate para evitar el humo (el aire limpio está más abajo).\n• Si tu ropa se prende fuego: pará, tirate al piso y rodá." />
+
+            <!-- DESPUÉS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DESPUES"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+
+            <TextView
+                android:textColor="@color/texto_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="4dp"
+                android:text="• No vuelvas a la zona hasta que los bomberos lo autoricen." />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
